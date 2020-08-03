@@ -9,8 +9,6 @@ CREATE DATABASE myshop;
 - CREATE TABLE items(id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), description VARCHAR(255), price INT, stock INT, category_id INT);
 - CREATE TABLE categories(id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255));
 - alter table items add foreign key (category_id) references categories (id);
-- 
-- alter table items drop foreign key FK_categoriesitems;
 
 3. Memasukkan Data pada Table
 
