@@ -33,6 +33,8 @@ query => select*from items where price>1000000;
 select*from items where name like '%watch' or description like '%watch';
 
 c. Menampilkan data items join dengan kategori
+query :
+select items.name, items.description, items.price, items.stock, items.category_id, categories.name FROM items INNER JOIN categories ON items.category_id = categories.id;
 
 5. Mengubah Data
 query => UPDATE items SET price = 2500000 WHERE name = 'Sumsang b50';
